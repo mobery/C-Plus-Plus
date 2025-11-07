@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推箱子游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="menu-screen" class="screen active">
+            <h1>推箱子游戏</h1>
+            <div id="map-selector">
+                <h2>选择地图</h2>
+                <div class="map-grid">
+                    <button class="map-btn" data-map="0">地图 1</button>
+                    <button class="map-btn" data-map="1">地图 2</button>
+                    <button class="map-btn" data-map="2">地图 3</button>
+                    <button class="map-btn" data-map="3">地图 4</button>
+                    <button class="map-btn" data-map="4">地图 5</button>
+                    <button class="map-btn" data-map="5">地图 6</button>
+                    <button class="map-btn" data-map="6">地图 7</button>
+                    <button class="map-btn" data-map="7">地图 8</button>
+                    <button class="map-btn" data-map="8">地图 9</button>
+                    <button class="map-btn" data-map="9">地图 10</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="game-screen" class="screen">
+            <div id="game-header">
+                <h2 id="map-title">地图 X</h2>
+                <button id="back-btn">返回菜单</button>
+            </div>
+            <div id="game-canvas-container">
+                <div id="game-canvas"></div>
+            </div>
+            <div id="game-info">
+                <div id="move-counter">移动次数: <span id="move-count">0</span></div>
+            </div>
+            <div id="win-message" class="hidden">
+                <h2>恭喜你获胜了！</h2>
+                <p>移动次数: <span id="final-move-count">0</span></p>
+                <button id="next-map-btn">下一关</button>
+                <button id="return-menu-btn">返回菜单</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
