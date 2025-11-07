@@ -127,7 +127,7 @@ body {
     color: #333;
 }
 
-.cell.floor {
+.cell.empty {
     background-color: #e0c097;
 }
 
@@ -152,6 +152,12 @@ body {
     background-color: #FF9800;
     color: white;
     border-radius: 5px;
+}
+
+.cell.player-on-target {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 50%;
 }
 
 /* 游戏信息样式 */
